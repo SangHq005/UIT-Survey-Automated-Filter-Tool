@@ -16,7 +16,7 @@ Công cụ tiện ích mở rộng (Chrome Extension) giúp tự động điền
 ## 🛠️ Hướng dẫn cài đặt & Sử dụng
 
 ### Bước 1: Tải về và giải nén
-Tải thư mục dự án này về máy tính của bạn và giải nén (nếu ở định dạng `.zip`).
+Tải UIT-Survey-Auto-Filler.zip này về máy tính của bạn và giải nén (nếu ở định dạng `.zip`).
 
 ### Bước 2: Kích hoạt Developer Mode trên trình duyệt
 1. Mở trình duyệt Chrome (hoặc Edge, Cốc Cốc, Brave,...).
