@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIT Survey Auto-Filler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <div class="logo-area">
+        <span class="logo-icon">🚀</span>
+        <div>
+          <h1>UIT Survey</h1>
+          <p class="subtitle">Auto-Filler Tool</p>
+        </div>
+      </div>
+      <span class="badge">v1.0.0</span>
+    </div>
+
+    <div class="card-body">
+      <!-- Section: Rating Choices -->
+      <div class="form-group">
+        <label class="group-title">Mức độ đánh giá</label>
+        <div class="radio-cards">
+          <label class="radio-card">
+            <input type="radio" name="rating-mode" value="max" checked>
+            <div class="card-content">
+              <span class="emoji">⭐</span>
+              <span class="label-text">Tối đa (5/5)</span>
+              <span class="desc-text">Đồng ý hoàn toàn tất cả câu</span>
+            </div>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="rating-mode" value="natural">
+            <div class="card-content">
+              <span class="emoji">🍃</span>
+              <span class="label-text">Tự nhiên (Khuyên dùng)</span>
+              <span class="desc-text">80% Tối đa, 20% Tốt (Tránh quét)</span>
+            </div>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="rating-mode" value="good">
+            <div class="card-content">
+              <span class="emoji">👍</span>
+              <span class="label-text">Khá / Tốt (4/5)</span>
+              <span class="desc-text">Đồng ý phần lớn các câu</span>
+            </div>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="rating-mode" value="average">
+            <div class="card-content">
+              <span class="emoji">😐</span>
+              <span class="label-text">Trung bình (3/5)</span>
+              <span class="desc-text">Đánh giá ở mức bình thường</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Section: Comments -->
+      <div class="form-group">
+        <div class="flex-justify">
+          <label class="group-title">Ý kiến đóng góp</label>
+          <span class="tip-badge">Ngẫu nhiên theo dòng</span>
+        </div>
+        <textarea id="comments-input" placeholder="Mỗi dòng là một nhận xét..."></textarea>
+      </div>
+
+      <!-- Section: Automation Options -->
+      <div class="form-group row-group">
+        <div class="flex-col">
+          <span class="option-title">Tự động qua trang</span>
+          <span class="option-desc">Tự động click Tiếp theo / Gửi đi</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="auto-next" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <!-- Section: Delay Range -->
+      <div class="form-group" id="delay-container">
+        <div class="flex-justify">
+          <span class="option-title">Thời gian trễ</span>
+          <span class="value-indicator" id="delay-val">1.0 giây</span>
+        </div>
+        <input type="range" id="delay-time" min="0.3" max="3.0" step="0.1" value="1.0" class="range-slider">
+      </div>
+
+      <!-- Action Button -->
+      <button id="btn-fill" class="btn-primary">
+        <span class="btn-text">Bắt đầu tự động điền</span>
+        <span class="btn-glow"></span>
+      </button>
+    </div>
+
+    <div class="card-footer">
+      <div id="status-message" class="status-neutral">
+        <span class="status-indicator"></span>
+        <span class="status-text">Đang kiểm tra trang hiện tại...</span>
+      </div>
+    </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "UIT Survey Auto-Filler",
+  "version": "1.0.0",
+  "description": "Công cụ đánh giá nhanh giảng viên sau khi học cho sinh viên UIT",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://survey.uit.edu.vn/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
