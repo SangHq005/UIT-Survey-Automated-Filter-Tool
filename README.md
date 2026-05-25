@@ -28,7 +28,7 @@ Tải UIT-Survey-Auto-Filler.zip này về máy tính của bạn và giải né
 
 ### Bước 3: Nạp tiện ích vào trình duyệt
 1. Click chọn nút **Load unpacked (Tải thư mục đã giải nén)** ở góc trên cùng bên trái.
-2. Trỏ đường dẫn và chọn thư mục chứa dự án này (`AutomatedReport-UIT`).
+2. Trỏ đường dẫn và chọn thư mục chứa dự án này (`UIT-Survey-Auto-Filler`).
 
 ### Bước 4: Chạy công cụ
 1. Ghim (Pin) tiện ích **UIT Survey Auto-Filler** lên thanh công cụ trình duyệt để tiện thao tác.
